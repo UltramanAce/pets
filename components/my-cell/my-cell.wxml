@@ -1,0 +1,5 @@
+<view class="my-cell-wrap">
+  <mp-cell title="{{title}}" footer="{{footer}}" link="{{link}}" url="{{url}}" hover="{{hover}}" ext-class="my-cell">
+  </mp-cell>
+</view>
+

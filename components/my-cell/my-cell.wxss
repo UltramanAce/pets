@@ -1,0 +1,16 @@
+.my-cell-wrap {
+  background-color: #fff;
+}
+.my-cell-wrap .weui-cell__hd {
+  font-size: 28rpx;
+  color: #666;
+}
+.my-cell-wrap .weui-cell__ft {
+  font-size: 24rpx;
+  color: #ccc;
+}
+.my-cell-wrap .weui-cell__ft_in-access:after {
+  width: 12rpx;
+  height: 12rpx;
+  color: #c7c7cc;
+}

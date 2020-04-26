@@ -1,0 +1,10 @@
+<!-- 宫格 -->
+<view class="my-grid-wrap">
+    <view wx:for="{{grids}}" wx:key="*this" class="my-grid" style="width: {{1/num*100}}%">
+        <navigator url="{{item.url}}">
+            <image class="my-grid__icon" src="{{item.img}}" wx:if="{{item.img}}"/>
+            <mp-icon icon="{{item.icon}}" color="{{item.iconC}}" size="{{item.iconS}}" wx:if="{{item.icon}}"></mp-icon>
+            <view class="my-grid__label">{{item.title}}</view>
+        </navigator>
+    </view>
+</view>

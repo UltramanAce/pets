@@ -94,70 +94,87 @@ module.exports =
 
 
 Component({
-    options: {
-        multipleSlots: true,
-        addGlobalClass: true
+  options: {
+    multipleSlots: true,
+    // 在组件定义时的选项中启用多slot支持
+    addGlobalClass: true
+  },
+  properties: {
+    closabled: {
+      // 是否具有关闭标签
+      type: Boolean,
+      value: true
     },
-    properties: {
-        closabled: {
-            type: Boolean,
-            value: true
-        },
-        title: {
-            type: String,
-            value: ''
-        },
-        subTitle: {
-            type: String,
-            value: ''
-        },
-        extClass: {
-            type: String,
-            value: ''
-        },
-        desc: {
-            type: String,
-            value: ''
-        },
-        tips: {
-            type: String,
-            value: ''
-        },
-        maskClosable: {
-            type: Boolean,
-            value: true
-        },
-        mask: {
-            type: Boolean,
-            value: true
-        },
-        show: {
-            type: Boolean,
-            value: false,
-            observer: '_showChange'
-        },
-        buttons: {
-            type: Array,
-            value: []
-        }
+    title: {
+      // 标题，也可以通过 slot 自定义
+      type: String,
+      value: ''
     },
-    methods: {
-        close: function close(e) {
-            var type = e.currentTarget.dataset.type;
+    subTitle: {
+      // 副标题，也可以通过 slot 自定义
+      type: String,
+      value: ''
+    },
+    extClass: {
+      // 弹窗 class
+      type: String,
+      value: ''
+    },
+    desc: {
+      type: String,
+      value: ''
+    },
+    tips: {
+      type: String,
+      value: ''
+    },
+    maskClosable: {
+      type: Boolean,
+      value: true
+    },
+    mask: {
+      // 是否需要 遮罩层
+      type: Boolean,
+      value: true
+    },
+    show: {
+      // 是否开启弹窗
+      type: Boolean,
+      value: false,
+      observer: '_showChange'
+    },
+    buttons: {
+      type: Array,
+      value: [] // {text, extClass}
 
-            if (this.data.maskClosable || type === 'close') {
-                this.setData({
-                    show: false
-                });
-                this.triggerEvent('close');
-            }
-        },
-        buttonTap: function buttonTap(e) {
-            var index = e.currentTarget.dataset.index;
-
-            this.triggerEvent('buttontap', { index: index, item: this.data.buttons[index] }, {});
-        }
     }
+  },
+  methods: {
+    close(e) {
+      const {
+        type
+      } = e.currentTarget.dataset;
+
+      if (this.data.maskClosable || type === 'close') {
+        this.setData({
+          show: false
+        }); // 关闭弹窗回调事件
+
+        this.triggerEvent('close');
+      }
+    },
+
+    buttonTap(e) {
+      const {
+        index
+      } = e.currentTarget.dataset;
+      this.triggerEvent('buttontap', {
+        index,
+        item: this.data.buttons[index]
+      }, {});
+    }
+
+  }
 });
 
 /***/ })

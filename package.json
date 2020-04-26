@@ -1,13 +1,23 @@
 {
   "name": "pets",
   "version": "1.0.0",
-  "description": "",
+  "description": "养宠小程序",
   "main": "app.js",
-  "dependencies": {},
+  "dependencies": {
+    "weui-miniprogram": "^1.0.3"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltramanAce/pets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UltramanAce/pets/issues"
+  },
+  "homepage": "https://github.com/UltramanAce/pets#readme"
 }

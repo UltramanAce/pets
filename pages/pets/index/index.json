@@ -1,5 +1,9 @@
 {
   "usingComponents": {
-    "custom-tab-bar": "../../../components/custom-tab-bar/index"
+    "custom-tab-bar": "/components/custom-tab-bar/custom-tab-bar",
+    "my-cell": "/components/my-cell/my-cell",
+    "my-grid": "/components/my-grid/my-grid",
+    "my-panel": "/components/my-panel/my-panel",
+    "my-image": "/components/my-image/my-image"
   }
 }

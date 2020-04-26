@@ -1,0 +1,12 @@
+.my-grid-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.my-grid-wrap .my-grid {
+  height: 150rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}

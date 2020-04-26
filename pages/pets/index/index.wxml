@@ -1,14 +1,35 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- 养宠主页 -->
+<view class="container pb96">
+  <!-- 我的宠物 -->
+  <view class="top-banner mt10">
+    <my-cell title="我的宠物" footer="+ 添加宠物" link url="/pages/pets/logs/logs" class="my-pets"></my-cell>
+    <view class="swiper-box">
+      <swiper indicator-dots indicator-color="#BFBFBF" indicator-active-color="#FF8F05" autoplay circular>
+        <block wx:for="{{topSwiperData}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item">{{item}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 入口集合 -->
+  <view class="mt10">
+    <my-grid grids="{{grids}}" num="{{3}}"></my-grid>
+  </view>
+  <!-- 养宠必读 -->
+  <view class="mt10">
+    <my-cell title="养宠必读" link url="/pages/pets/logs/logs"></my-cell>
+    <my-panel panels="{{panels}}"></my-panel>
+  </view>
+  <!-- 训练专场 -->
+  <view class="mt10">
+    <my-cell title="训练专场" link url="/pages/pets/logs/logs"></my-cell>
+    <my-image></my-image>
+  </view>
+  <!-- 训练专场 -->
+  <view class="knowledge">
+
   </view>
   <custom-tab-bar></custom-tab-bar>
 </view>

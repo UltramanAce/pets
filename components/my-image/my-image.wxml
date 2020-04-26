@@ -1,0 +1,8 @@
+<view class="my-image-wrap plr30">
+    <view class="imgage-box">
+        <image class="my-img" mode="scaleToFill" src="/images/cat.jpg"></image>
+    </view>
+    <view class="imgage-box">
+        <image class="my-img" mode="scaleToFill" src="/images/cat.jpg"></image>
+    </view>
+</view>

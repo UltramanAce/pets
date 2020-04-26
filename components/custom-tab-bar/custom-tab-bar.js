@@ -10,24 +10,24 @@ Component({
       selectedIconPath: "./image/icon_component_HL.png",
       text: "养宠"
       }, 
-      {
-      pagePath: "/index",
-      iconPath: "./image/icon_component.png",
-      selectedIconPath: "./image/icon_component_HL.png",
-      text: "医院"
-      }, 
-      {
-      pagePath: "/index",
-      iconPath: "./image/icon_component.png",
-      selectedIconPath: "./image/icon_component_HL.png",
-      text: "商城"
-      }, 
-      {
-      pagePath: "/index",
-      iconPath: "./image/icon_component.png",
-      selectedIconPath: "./image/icon_component_HL.png",
-      text: "宠圈"
-      }, 
+      // {
+      // pagePath: "/index",
+      // iconPath: "./image/icon_component.png",
+      // selectedIconPath: "./image/icon_component_HL.png",
+      // text: "医院"
+      // }, 
+      // {
+      // pagePath: "/index",
+      // iconPath: "./image/icon_component.png",
+      // selectedIconPath: "./image/icon_component_HL.png",
+      // text: "商城"
+      // }, 
+      // {
+      // pagePath: "/index",
+      // iconPath: "./image/icon_component.png",
+      // selectedIconPath: "./image/icon_component_HL.png",
+      // text: "宠圈"
+      // }, 
       {
         pagePath: "/index",
         iconPath: "./image/icon_API.png",

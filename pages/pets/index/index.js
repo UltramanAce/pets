@@ -4,10 +4,65 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    topSwiperData: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    grids: [
+      {
+        url: '/pages/pets/logs/logs',
+        title: '挂号',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      },
+      {
+        url: '/pages/pets/logs/logs',
+        title: '疫苗',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      },
+      {
+        url: '/pages/pets/logs/logs',
+        title: '驱虫',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      },
+      {
+        url: '/pages/pets/logs/logs',
+        title: '绝育',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      },
+      {
+        url: '/pages/pets/logs/logs',
+        title: '体检',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      },
+      {
+        url: '/pages/pets/logs/logs',
+        title: '寄养',
+        icon: 'add',
+        iconC: '#DB2C2C',
+        iconS: 30,
+      }
+    ],
+    panels: [
+       {
+          url: '../logs/logs', // 导航地址
+          title: '标题一', // 标题
+          desc: '主详情', // 主详情
+          img: '/images/cat.jpg', // 图片路径
+      },
+      {
+        url: '../logs/logs',
+        title: '标题一',
+        desc: '主详情',
+        img: '/images/cat.jpg',
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {

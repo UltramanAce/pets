@@ -94,73 +94,87 @@ module.exports =
 
 
 Component({
-    options: {
-        multipleSlots: true,
-        addGlobalClass: true
+  options: {
+    multipleSlots: true,
+    // 在组件定义时的选项中启用多slot支持
+    addGlobalClass: true
+  },
+  properties: {
+    title: {
+      // 弹窗标题，也可以通过 slot 自定义
+      type: String,
+      value: ''
     },
-    properties: {
-        title: {
-            type: String,
-            value: ''
-        },
-        extClass: {
-            type: String,
-            value: ''
-        },
-        maskClosable: {
-            type: Boolean,
-            value: true
-        },
-        mask: {
-            type: Boolean,
-            value: true
-        },
-        show: {
-            type: Boolean,
-            value: false,
-            observer: '_showChange'
-        },
-        buttons: {
-            type: Array,
-            value: []
-        }
+    extClass: {
+      // 弹窗 class
+      type: String,
+      value: ''
     },
-    data: {
-        innerShow: false
+    maskClosable: {
+      type: Boolean,
+      value: true
     },
-    ready: function ready() {
-        var buttons = this.data.buttons;
-        var len = buttons.length;
-        buttons.forEach(function (btn, index) {
-            if (len === 1) {
-                btn.className = 'weui-dialog__btn_primary';
-            } else if (index === 0) {
-                btn.className = 'weui-dialog__btn_default';
-            } else {
-                btn.className = 'weui-dialog__btn_primary';
-            }
-        });
-        this.setData({
-            buttons: buttons
-        });
+    mask: {
+      // 是否需要 遮罩层
+      type: Boolean,
+      value: true
     },
+    show: {
+      // 是否开启弹窗
+      type: Boolean,
+      value: false,
+      observer: '_showChange'
+    },
+    buttons: {
+      type: Array,
+      value: [] // {text, extClass}
 
-    methods: {
-        buttonTap: function buttonTap(e) {
-            var index = e.currentTarget.dataset.index;
-
-            this.triggerEvent('buttontap', { index: index, item: this.data.buttons[index] }, {});
-        },
-        close: function close() {
-            var data = this.data;
-            if (!data.maskClosable) return;
-            this.setData({
-                show: false
-            });
-            this.triggerEvent('close', {}, {});
-        },
-        stopEvent: function stopEvent() {}
     }
+  },
+  data: {
+    innerShow: false
+  },
+
+  ready() {
+    const buttons = this.data.buttons;
+    const len = buttons.length;
+    buttons.forEach((btn, index) => {
+      if (len === 1) {
+        btn.className = 'weui-dialog__btn_primary';
+      } else if (index === 0) {
+        btn.className = 'weui-dialog__btn_default';
+      } else {
+        btn.className = 'weui-dialog__btn_primary';
+      }
+    });
+    this.setData({
+      buttons
+    });
+  },
+
+  methods: {
+    buttonTap(e) {
+      const {
+        index
+      } = e.currentTarget.dataset;
+      this.triggerEvent('buttontap', {
+        index,
+        item: this.data.buttons[index]
+      }, {});
+    },
+
+    close() {
+      const data = this.data;
+      if (!data.maskClosable) return;
+      this.setData({
+        show: false
+      });
+      this.triggerEvent('close', {}, {});
+    },
+
+    stopEvent() {}
+
+  }
 });
 
 /***/ })

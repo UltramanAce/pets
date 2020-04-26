@@ -1,11 +1,10 @@
 @import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+@import '/style/base.wxss';
 /**app.wxss**/
 .container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
+  font-size: 28rpx;
   box-sizing: border-box;
-} 
+  background-color: #F4F4F4;
+  overflow-x: hidden;
+}
