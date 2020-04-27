@@ -5,7 +5,7 @@ Component({
     selectedColor: "#3cc51f",
     list: [
       {
-      pagePath: "/index",
+      pagePath: "/pets/index/index",
       iconPath: "./image/icon_component.png",
       selectedIconPath: "./image/icon_component_HL.png",
       text: "养宠"
@@ -15,18 +15,6 @@ Component({
       // iconPath: "./image/icon_component.png",
       // selectedIconPath: "./image/icon_component_HL.png",
       // text: "医院"
-      // }, 
-      // {
-      // pagePath: "/index",
-      // iconPath: "./image/icon_component.png",
-      // selectedIconPath: "./image/icon_component_HL.png",
-      // text: "商城"
-      // }, 
-      // {
-      // pagePath: "/index",
-      // iconPath: "./image/icon_component.png",
-      // selectedIconPath: "./image/icon_component_HL.png",
-      // text: "宠圈"
       // }, 
       {
         pagePath: "/index",
