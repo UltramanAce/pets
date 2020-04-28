@@ -62,6 +62,19 @@ Page({
         desc: '主详情',
         img: '/images/cat.jpg',
       }
+    ],
+    images1: [
+       {
+          img: '', // 图片路径
+          url: '', // 导航地址
+          title: '', // 标题
+          fontS: '24rpx', // 字体大小
+          color: '#666', // 字体颜色
+          icon: '', // 图标
+          iconNum: 0, // 图标个数
+          iconAlign: 'left', // 图标布局
+          hasBanner: true, // 是否有横幅
+      }
     ]
   },
   //事件处理函数

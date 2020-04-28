@@ -1,9 +1,4 @@
-.my-image-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
 .my-image-wrap .imgage-box {
-  flex: 1;
   height: 200rpx;
 }
 .my-image-wrap .imgage-box .my-img {

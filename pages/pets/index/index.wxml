@@ -25,7 +25,7 @@
   <!-- 训练专场 -->
   <view class="mt10">
     <my-cell title="训练专场" link url="/pages/pets/logs/logs"></my-cell>
-    <my-image></my-image>
+    <my-image images="{{images1}}"></my-image>
   </view>
   <!-- 训练专场 -->
   <view class="knowledge">

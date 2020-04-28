@@ -1,8 +1,5 @@
 <view class="my-image-wrap plr30">
-    <view class="imgage-box">
-        <image class="my-img" mode="scaleToFill" src="/images/cat.jpg"></image>
-    </view>
-    <view class="imgage-box">
+    <view class="imgage-box" wx:for="{{images}}" wx:key="*this" style="width: {{1/num*100}}%">
         <image class="my-img" mode="scaleToFill" src="/images/cat.jpg"></image>
     </view>
 </view>

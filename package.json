@@ -4,6 +4,7 @@
   "description": "养宠小程序",
   "main": "app.js",
   "dependencies": {
+    "miniprogram-computed": "^2.1.1",
     "weui-miniprogram": "^1.0.3"
   },
   "devDependencies": {},

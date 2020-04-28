@@ -2,7 +2,7 @@
     <view class="page__bd">
         <!-- type1：图文 -->
         <view class="weui-panel weui-panel_access" wx:if="{{type === 1}}">
-            <view class="weui-panel__bd" wx:for="{{panels}}">
+            <view class="weui-panel__bd" wx:for="{{panels}}" wx:key="*this">
                 <navigator url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="{{item.img}}" />
@@ -16,7 +16,7 @@
         </view>
         <!-- type2：文字 -->
         <view class="weui-panel weui-panel_access" wx:if="{{type === 2}}">
-            <view class="weui-panel__bd" wx:for="{{panels}}">
+            <view class="weui-panel__bd" wx:for="{{panels}}" wx:key="*this">
                 <view class="weui-media-box weui-media-box_text">
                     <view class="weui-media-box__title weui-media-box__title_in-text">{{item.title}}</view>
                     <view class="weui-media-box__desc">{{item.desc}}</view>
@@ -25,7 +25,7 @@
         </view>
         <!-- type3：小图文 -->
         <view class="weui-panel" wx:if="{{type === 3}}">
-            <view class="weui-panel__bd" wx:for="{{panels}}">
+            <view class="weui-panel__bd" wx:for="{{panels}}" wx:key="*this">
                 <view class="weui-media-box weui-media-box_small-appmsg">
                     <view class="weui-cells weui-cells_in-small-appmsg">
                         <navigator url="{{item.url}}" class="weui-cell weui-cell_example weui-cell_access" hover-class="weui-cell_active">
