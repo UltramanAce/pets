@@ -1,5 +1,5 @@
 <!-- 养宠主页 -->
-<view class="container pb96">
+<view class="container pb130">
   <!-- 我的宠物 -->
   <view class="top-banner mt10">
     <my-cell title="我的宠物" footer="+ 添加宠物" link url="/pages/pets/logs/logs" class="my-pets"></my-cell>
@@ -25,11 +25,12 @@
   <!-- 训练专场 -->
   <view class="mt10">
     <my-cell title="训练专场" link url="/pages/pets/logs/logs"></my-cell>
-    <my-image images="{{images1}}"></my-image>
+    <my-image images="{{images1}}" num="{{2}}"></my-image>
   </view>
   <!-- 训练专场 -->
   <view class="knowledge">
-
+    <my-cell title="知识专题" link url="/pages/pets/logs/logs"></my-cell>
+    <my-image images="{{images2}}"></my-image>
   </view>
   <custom-tab-bar></custom-tab-bar>
 </view>

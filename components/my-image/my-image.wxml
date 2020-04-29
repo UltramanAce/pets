@@ -1,5 +1,16 @@
 <view class="my-image-wrap plr30">
-    <view class="imgage-box" wx:for="{{images}}" wx:key="*this" style="width: {{1/num*100}}%">
-        <image class="my-img" mode="scaleToFill" src="/images/cat.jpg"></image>
+    <view wx:for="{{images}}" wx:key="*this" 
+    class="imgage-box {{num > 1 ? (index%2 === 0 ? 'pr10' : 'pl10') : '' }}" 
+    style="width: {{1/num*100}}%;height: {{imgH}}rpx">
+        <navigator url="{{item.url}}" class="nav">
+            <image class="my-img" mode="scaleToFill" src="{{item.img}}"></image>
+            <view class="banner-box {{hasBg ? 'banner-bg' : ''}}"
+            style="justify-content: {{iconAlign === 'right' ? 'space-between' : ''}}">
+                <text class="title ellipsis" style="width: {{item.iconNum > 1 ? '50%' : '100%'}}">{{item.title}}</text>
+                <view class="star">
+                    <mp-icon wx:for="{{item.iconNum}}" wx:key="*this" type="{{iconType}}" icon="{{icon}}" color="#ff8f05" size="{{iconS}}"></mp-icon>
+                </view>
+            </view>
+        </navigator>
     </view>
 </view>
