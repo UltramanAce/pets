@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-tab": "/components/my-tab/my-tab",
+    "my-panel": "/components/my-panel/my-panel"
+  },
+  "navigationBarTitleText": "养宠必读"
+}

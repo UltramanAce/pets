@@ -1,0 +1,5 @@
+<!-- 养宠必读列表 -->
+<view class="container read-list">
+  <my-tab menuList="{{menuList}}" bind:clickMenu="clickMenu" tabType="type2"></my-tab>
+  <my-panel panels="{{panels}}" my-panel="my-panel"></my-panel>
+</view>

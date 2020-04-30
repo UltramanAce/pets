@@ -1,0 +1,26 @@
+.container .top-banner {
+  width: 100%;
+  line-height: 40rpx;
+  background-color: rgba(255, 143, 5, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.container .my-pets .weui-cell__ft_in-access {
+  padding-right: 0;
+}
+.container .my-pets .weui-cell__ft_in-access:after {
+  display: none;
+}
+.container .my-pets .my-cell {
+  background-color: rgba(255, 143, 5, 0.8);
+}
+.container .my-pets .my-cell .weui-cell__hd,
+.container .my-pets .my-cell .weui-cell__ft {
+  color: #fff;
+}
+.container .swiper-box {
+  padding: 0 30rpx 30rpx 30rpx;
+}
+.container .swiper-box swiper {
+  background: #FFFDFA;
+  border-radius: 24rpx;
+}

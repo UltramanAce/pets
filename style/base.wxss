@@ -1,7 +1,13 @@
 /* 基础
 -------------------------------------------------- */
+.bg1 {
+  background-color: #F4F4F4;
+}
 .mt10 {
   margin-bottom: 10rpx;
+}
+.mt20 {
+  margin-bottom: 20rpx;
 }
 .pt10 {
   padding-top: 10rpx;
