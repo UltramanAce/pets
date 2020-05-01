@@ -1,15 +1,17 @@
 <!-- 健康提醒详情 -->
 <view class="container health-tips">
-  <image src="/images/cat.jpg"/>
+  <view class="img-box">
+    <image class="img" src="/images/cat.jpg"/>
+  </view>
   <view class="content">
-    <view class="title ellipsis">
-      {{detailsData.title}}
+    <view class="text-group">
+      <view class="title ellipsis">
+        {{detailsData.title}}
+      </view>
+      <view class="desc">
+        {{detailsData.desc}}
+      </view>
     </view>
-    <view class="details">
-      {{detailsData.details}}
-    </view>
-    <view class="sub">
-      {{detailsData.sub}}
-    </view>
+    
   </view>
 </view>

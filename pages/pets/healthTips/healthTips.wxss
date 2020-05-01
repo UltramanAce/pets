@@ -1,28 +1,24 @@
 .health-tips {
   background-color: #fff;
+  font-size: 14px;
 }
-.health-tips .my-image-wrap {
-  background-color: #fff;
-  padding: 0;
+.health-tips .img-box {
+  width: 100%;
+  height: 320rpx;
+}
+.health-tips .img-box .img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .health-tips .content {
-  padding: 0 60rpx;
+  padding: 30rpx 40rpx;
 }
-.health-tips .content .title {
-  padding: 36rpx 60rpx 20rpx 60rpx;
-  font-size: 16px;
-  text-align: center;
-  color: #333;
-}
-.health-tips .content .details {
-  font-size: 14px;
-  text-indent: 28px;
-  text-align: left;
+.health-tips .content .text-group .title {
+  line-height: 20px;
   color: #666;
 }
-.health-tips .content .sub {
-  padding: 28rpx 0 60rpx 0;
-  font-size: 12px;
-  text-align: left;
+.health-tips .content .text-group .desc {
+  line-height: 20px;
   color: #999;
 }
