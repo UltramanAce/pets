@@ -1,0 +1,11 @@
+<!-- 分类列表 -->
+<view class="container classify-list">
+  <view class="mt10">
+    <my-cell title="基础服务" link="{{false}}" footer=""></my-cell>
+    <my-grid grids="{{grids1}}"></my-grid>
+  </view>
+  <view class="mt10">
+    <my-cell title="其他服务" link="{{false}}" footer=""></my-cell>
+    <my-grid grids="{{grids2}}"></my-grid>
+  </view>
+</view>

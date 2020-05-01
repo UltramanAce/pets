@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-cell": "/components/my-cell/my-cell",
+    "my-grid": "/components/my-grid/my-grid"
+  },
+  "navigationBarTitleText": "分类列表"
+}

@@ -15,7 +15,7 @@
   </view>
   <!-- 入口集合 -->
   <view class="mt10">
-    <my-grid grids="{{grids}}" num="{{3}}"></my-grid>
+    <my-grid grids="{{grids}}"></my-grid>
   </view>
   <!-- 养宠必读 -->
   <view class="mt10">
