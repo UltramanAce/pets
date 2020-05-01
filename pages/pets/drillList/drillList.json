@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-cell": "/components/my-cell/my-cell",
+    "my-image": "/components/my-image/my-image"
+  },
+  "navigationBarTitleText": "训练标题"
+}

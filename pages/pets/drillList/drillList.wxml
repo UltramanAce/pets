@@ -1,0 +1,11 @@
+<!-- 训练专题列表 -->
+<view class="container drill-list">
+  <view>
+    <my-cell title="专题标题" link="{{false}}" footer=""></my-cell>
+    <my-image images="{{images1}}" num="{{2}}"></my-image>
+  </view>
+  <view>
+    <my-cell title="专题标题" link="{{false}}" footer=""></my-cell>
+    <my-image images="{{images2}}" num="{{2}}"></my-image>
+  </view>
+</view>

@@ -5,5 +5,6 @@
     "my-grid": "/components/my-grid/my-grid",
     "my-panel": "/components/my-panel/my-panel",
     "my-image": "/components/my-image/my-image"
-  }
+  },
+  "navigationBarTitleText": "养宠"
 }
