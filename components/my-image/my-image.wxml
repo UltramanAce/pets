@@ -1,7 +1,7 @@
 <view class="my-image-wrap plr30">
     <view wx:for="{{images}}" wx:key="*this" 
     class="imgage-box {{num > 1 ? (index%2 === 0 ? 'pr10' : 'pl10') : '' }}" 
-    style="width: {{1/num*100}}%;height: {{imgH}}rpx">
+    style="width: {{100/num}}%;height: {{imgH}}rpx">
         <navigator url="{{item.url}}" class="nav">
             <image class="my-img" mode="scaleToFill" src="{{item.img}}"></image>
             <view class="banner-box {{hasBg ? 'banner-bg' : ''}}"

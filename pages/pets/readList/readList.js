@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    currentIdx: 0,
     menuList: [
       {
         name: '最新'
@@ -12,7 +13,7 @@ Page({
         name: '最热'
       }
     ],
-    panels: [
+    panels1: [
        {
           url: '../logs/logs', // 导航地址
           title: '标题一', // 标题
@@ -25,48 +26,37 @@ Page({
         desc: '主详情',
         img: '/images/cat.jpg',
       }
-    ]
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    ],
+    panels2: [
+       {
+          url: '../logs/logs', // 导航地址
+          title: '标题一', // 标题
+          desc: '主详情', // 主详情
+          img: '/images/cat.jpg', // 图片路径
+      },
+      {
+        url: '../logs/logs',
+        title: '标题一',
+        desc: '主详情',
+        img: '/images/cat.jpg',
+      },
+      {
+        url: '../logs/logs',
+        title: '标题一',
+        desc: '主详情',
+        img: '/images/cat.jpg',
+      }
+    ],
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+
   },
-  getUserInfo: function(e) {
+  // tab切换
+  clickMenu: function(e) {
+    console.log('-----------')
     console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      currentIdx: e.detail.current
     })
-  }
+  },
 })

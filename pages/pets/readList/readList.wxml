@@ -1,5 +1,10 @@
 <!-- 养宠必读列表 -->
 <view class="container read-list">
-  <my-tab menuList="{{menuList}}" bind:clickMenu="clickMenu" tabType="type2"></my-tab>
-  <my-panel panels="{{panels}}" my-panel="my-panel"></my-panel>
+  <my-tab menuList="{{menuList}}" bind:clickMenu="clickMenu" tabType="type1"></my-tab>
+  <view class="new" hidden="{{currentIdx === 0}}">
+    <my-panel panels="{{panels1}}" my-panel="my-panel"></my-panel>
+  </view>
+  <view class="hot" hidden="{{currentIdx === 1}}">
+    <my-panel panels="{{panels2}}" my-panel="my-panel"></my-panel>
+  </view>
 </view>
