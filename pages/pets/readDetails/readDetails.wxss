@@ -1,8 +1,8 @@
 .read-details {
-  background-color: #F4F4F4;
+  background-color: #fff;
 }
 .read-details .title {
-  padding: 44rpx 0;
+  padding: 44rpx 60rpx;
   font-size: 16px;
   text-align: center;
   color: #333;
@@ -17,14 +17,14 @@
   height: 100%;
 }
 .read-details .details {
-  padding-top: 40rpx;
+  padding: 40rpx 60rpx 0 60rpx;
   font-size: 14px;
   text-indent: 28px;
   text-align: left;
   color: #666;
 }
 .read-details .sub {
-  padding: 28rpx 0 60rpx 0;
+  padding: 28rpx 60rpx 0 60rpx;
   font-size: 12px;
   text-align: left;
   color: #999;

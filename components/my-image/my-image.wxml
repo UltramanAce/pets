@@ -6,8 +6,8 @@
             <image class="my-img" mode="scaleToFill" src="{{item.img}}"></image>
             <view class="banner-box {{hasBg ? 'banner-bg' : ''}}"
             style="justify-content: {{iconAlign === 'right' ? 'space-between' : ''}}">
-                <text class="title ellipsis" style="width: {{item.iconNum > 1 ? '50%' : '100%'}}">{{item.title}}</text>
-                <view class="star">
+                <text class="title ellipsis">{{item.title}}</text>
+                <view class="star" style="width: 160rpx">
                     <mp-icon wx:for="{{item.iconNum}}" wx:key="*this" type="{{iconType}}" icon="{{icon}}" color="#ff8f05" size="{{iconS}}"></mp-icon>
                 </view>
             </view>

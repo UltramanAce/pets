@@ -1,0 +1,15 @@
+<!-- 训练专题详情 -->
+<view class="container drill-details">
+  <my-image images="{{images1}}" imgH="{{448}}" iconAlign="left"></my-image>
+  <view class="content">
+    <view class="title ellipsis">
+      {{detailsData.title}}
+    </view>
+    <view class="details">
+      {{detailsData.details}}
+    </view>
+    <view class="sub">
+      {{detailsData.sub}}
+    </view>
+  </view>
+</view>

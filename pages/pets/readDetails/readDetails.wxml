@@ -1,6 +1,6 @@
 <!-- 养宠必读详情 -->
 <view class="container read-details plr30">
-  <view class="title">
+  <view class="title ellipsis">
     {{detailsData.title}}
   </view>
   <view class="img-box">
