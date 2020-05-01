@@ -17,6 +17,10 @@ Component({
     tabType: { // 样式类型(默认黄字短黄线， type1: 黄底白字， type2: 黄字无线， type3: 黄字长黄线)
       type: String,
       value: ''
+    },
+    fixed: { // 定位： top or bottom
+      type: String,
+      value: 'top'
     }
   },
 

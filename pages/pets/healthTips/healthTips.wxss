@@ -1,34 +1,28 @@
-.drill-details {
-  position: relative;
+.health-tips {
   background-color: #fff;
 }
-.drill-details .my-image-wrap {
+.health-tips .my-image-wrap {
   background-color: #fff;
   padding: 0;
 }
-.drill-details .content {
+.health-tips .content {
   padding: 0 60rpx;
 }
-.drill-details .content .title {
+.health-tips .content .title {
   padding: 36rpx 60rpx 20rpx 60rpx;
   font-size: 16px;
   text-align: center;
   color: #333;
 }
-.drill-details .content .details {
+.health-tips .content .details {
   font-size: 14px;
   text-indent: 28px;
   text-align: left;
   color: #666;
 }
-.drill-details .content .sub {
+.health-tips .content .sub {
   padding: 28rpx 0 60rpx 0;
   font-size: 12px;
   text-align: left;
   color: #999;
-}
-.drill-details .my-tab-wrap {
-  position: fixed;
-  left: 0;
-  bottom: 0;
 }

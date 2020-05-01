@@ -1,6 +1,6 @@
-<!-- 训练专题详情 -->
-<view class="container drill-details">
-  <my-image images="{{images1}}" imgH="{{448}}" iconAlign="left"></my-image>
+<!-- 健康提醒详情 -->
+<view class="container health-tips">
+  <image src="/images/cat.jpg"/>
   <view class="content">
     <view class="title ellipsis">
       {{detailsData.title}}
@@ -12,5 +12,4 @@
       {{detailsData.sub}}
     </view>
   </view>
-  <my-tab menuList="{{menuList}}" bind:clickMenu="clickMenu" tabType="type1" fixed="bottom"></my-tab>
 </view>

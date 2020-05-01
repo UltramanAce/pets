@@ -1,15 +1,25 @@
-.container{
+.my-tab-wrap{
   width: 100%;
-  height: 79rpx;
+  height: 80rpx;
   background: #FCFCFC;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  z-index: 100;
+ }
+ .top {
+   top: 0
+ }
+ .bottom {
+  bottom: 0
  }
  .tab{
   width: 100%;
-  height: 79rpx;
-  position: fixed;
+  height: 80rpx;
+  /* position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100; */
   white-space: nowrap;
   box-sizing: border-box;
   overflow: hidden;

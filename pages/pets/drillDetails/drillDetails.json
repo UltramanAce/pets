@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "my-image": "/components/my-image/my-image"
+    "my-image": "/components/my-image/my-image",
+    "my-tab": "/components/my-tab/my-tab"
   },
   "navigationBarTitleText": "训练专题详情"
 }

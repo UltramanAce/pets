@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-image": "/components/my-image/my-image"
+  },
+  "navigationBarTitleText": "健康提醒"
+}

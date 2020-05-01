@@ -26,22 +26,9 @@ Page({
        title: '难易度', // 标题
        iconNum: 5
      }
-    ],
-    menuList: [
-      {
-        name: '已学会'
-      },
-      {
-        name: '发经验'
-      }
-    ],
+   ]
   },
   onLoad: function () {
 
-  },
-  // tab切换
-  clickMenu: function(e) {
-    console.log('-----------')
-    console.log(e.detail.current)
-  },
+  }
 })

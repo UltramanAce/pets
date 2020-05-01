@@ -1,4 +1,4 @@
-<view class='container my-tab-wrap'>
+<view class='container my-tab-wrap {{fixed}}'>
   <scroll-view class="tab {{tabType}}" scroll-x scroll-left="{{tabScroll}}" scroll-with-animation="true">
     <block wx:for="{{menuList}}" wx:key="index">
       <view class="tab-item {{currentTab == index ? 'active' : ''}}" style="width:{{100/count}}%" data-current="{{index}}" bindtap='clickMenu'>
