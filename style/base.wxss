@@ -3,11 +3,18 @@
 .bg1 {
   background-color: #F4F4F4;
 }
+.bg-orange {
+  background-color: #FF8F05;
+  color: #fff;
+}
 .mt10 {
   margin-bottom: 10rpx;
 }
 .mt20 {
   margin-bottom: 20rpx;
+}
+.mr20 {
+  margin-right: 20rpx;
 }
 .pt10 {
   padding-top: 10rpx;
@@ -41,5 +48,34 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* 自定义组件
+/* 常用组合
 -------------------------------------------------- */
+.btn-submit-box {
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20rpx 80rpx;
+  background-color: #fff;
+}
+.btn-submit-box .btn-submit {
+  width: 100%;
+  background-color: #FF8F05;
+  color: #fff;
+  font-size: 14px;
+}
+/* my-form
+-------------------------------------------------- */
+.my-form .weui-cell {
+  font-size: 14px;
+}
+.my-form .weui-input {
+  text-align: right;
+}
+.my-form .weui-cell__hd {
+  color: #666;
+}
+.my-form .weui-cell__hd {
+  color: #999;
+}

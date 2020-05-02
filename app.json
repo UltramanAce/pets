@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pets/addPet/addPet",
     "pages/pets/classifyList/classifyList",
     "pages/pets/index/index",
     "pages/pets/healthTips/healthTips",
@@ -7,7 +8,6 @@
     "pages/pets/drillList/drillList",
     "pages/pets/readDetails/readDetails",
     "pages/pets/readList/readList",
-    "pages/pets/addPet/addPet",
     "pages/pets/logs/logs"
   ],
   "window": {
