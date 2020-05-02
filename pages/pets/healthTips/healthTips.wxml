@@ -14,4 +14,7 @@
     </view>
     
   </view>
+  <view class="btn-submit-box">
+      <button class="btn-submit" bindtap="goto">开启提醒</button>
+  </view>
 </view>
