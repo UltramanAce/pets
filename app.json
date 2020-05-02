@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pets/myPet/myPet",
     "pages/pets/addPet/addPet",
     "pages/pets/classifyList/classifyList",
     "pages/pets/index/index",

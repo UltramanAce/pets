@@ -1,0 +1,16 @@
+<!-- 添加宠物 -->
+<view class="container my-pet">
+    <view class="camera-box" wx:if="{{img}}">
+        <image class="img" src="{{img}}"></image>
+    </view>
+    <mp-cells>
+        <mp-cell value="宠物昵称" footer="{{formData.nickname}}"></mp-cell>
+        <mp-cell value="宠物性别" footer="{{formData.gender}}"></mp-cell>
+        <mp-cell value="宠物品种" footer="{{formData.species}}"></mp-cell>
+        <mp-cell value="到家时间" footer="{{formData.date}}"></mp-cell>
+        <mp-cell value="绝育状态" footer="{{formData.sterilization}}"></mp-cell>
+    </mp-cells>
+    <view class="btn-submit-box">
+        <button class="btn-submit" bindtap="goto">修改宠物信息</button>
+    </view>
+</view>
