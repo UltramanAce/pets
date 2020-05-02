@@ -1,0 +1,35 @@
+<!-- 宠物详情列表 -->
+<view class="container pet-details-list">
+    <mp-cell class="card-box">
+        <image slot="icon" class="img" src="{{petData.img}}"></image>
+        <view class="name-line">
+            <view class="name">{{petData.name}}</view>
+            <view class="details-type">
+                <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                <text class="ml10 align-mid">{{petData.detailsType}}</text>
+            </view>
+        </view>
+        <view class="tips-line mt10">
+            <view class="time">
+                <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                <text class="ml10 align-mid">相伴{{petData.day}}天</text>
+            </view>
+            <view class="like">
+                <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                <text class="ml10 align-mid">{{petData.like}}</text>
+            </view>
+            <view class="healthy-tips">
+                <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                <text class="ml10 align-mid">健康提醒</text>
+            </view>
+        </view>
+    </mp-cell>
+    <mp-cells>
+        <block wx:for="{{list}}" wx:key="*this">
+            <mp-cell class="details-box" link url="{{item.url}}">
+                <view class="details ellipsis2">{{item.desc}}</view>
+                <view class="sub">发布于{{item.releaseTime}}</view>
+            </mp-cell>
+        </block>
+    </mp-cells>
+</view>

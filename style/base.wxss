@@ -8,13 +8,28 @@
   color: #fff;
 }
 .mt10 {
-  margin-bottom: 10rpx;
+  margin-top: 10rpx;
 }
 .mt20 {
-  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.mr10 {
+  margin-right: 10rpx;
 }
 .mr20 {
   margin-right: 20rpx;
+}
+.mb10 {
+  margin-bottom: 10rpx;
+}
+.mb20 {
+  margin-bottom: 20rpx;
+}
+.ml10 {
+  margin-left: 10rpx;
+}
+.ml20 {
+  margin-left: 20rpx;
 }
 .pt10 {
   padding-top: 10rpx;
@@ -43,10 +58,20 @@
 .plr30 {
   padding: 0 30rpx;
 }
+.align-mid {
+  vertical-align: middle;
+}
 .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.ellipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 /* 常用组合
 -------------------------------------------------- */
