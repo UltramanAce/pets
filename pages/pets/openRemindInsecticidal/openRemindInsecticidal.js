@@ -14,6 +14,14 @@ Component({
         submitForm (e) {
             console.log(e.detail.value)
         },
+        bindPlanChange (e) { 
+            this.setData({
+                planIndex: e.detail.value,
+                formData: {
+                    plan: e.detail.value
+                }
+            })
+        },
         bindDateChange (e) { 
             this.setData({
                 formData: {
