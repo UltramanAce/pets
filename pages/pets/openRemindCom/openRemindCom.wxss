@@ -1,0 +1,12 @@
+.open-remind-com .content {
+  font-size: 14px;
+  color: #101010;
+}
+.open-remind-com .sub {
+  padding: 20rpx 32rpx;
+  font-size: 12px;
+  color: #999;
+}
+.open-remind-com .sub .day {
+  color: #FF8F05;
+}
