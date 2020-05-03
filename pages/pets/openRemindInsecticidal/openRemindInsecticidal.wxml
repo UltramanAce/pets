@@ -1,0 +1,39 @@
+<!-- 开启提醒（驱虫） -->
+<view class="container open-remind-insecticidal">
+    <view class="title">以往驱虫信息</view>
+    <mp-cells class="insecticidal-time">
+        <mp-cell value="驱虫时间" footer="{{insecticidalDate}}"></mp-cell>
+    </mp-cells>
+    <mp-cells>
+        <mp-cell>
+            <view class="content ellipsis3">
+                {{remind}}
+            </view>
+        </mp-cell>
+    </mp-cells>
+    <view class="my-form">
+        <form bindsubmit="submitForm">
+            <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+                <mp-cells>
+                    <mp-cell title="提醒计划" ext-class="">
+                        <picker name="plan" value="{{planIndex}}" range="{{planList}}">
+                            <view class="weui-input">{{planList[planIndex]}}</view>
+                        </picker>
+                    </mp-cell>
+                    <mp-cell title="下次提醒时间" ext-class="">
+                        <picker name="date" mode="date" value="{{formData.date}}" bindchange="bindDateChange">
+                            <view class="weui-input">{{formData.date}}</view>
+                        </picker>
+                    </mp-cell>
+                </mp-cells>
+                <view class="sub">
+                    <text class="align-mid">建议下次的免疫时间为：</text>
+                    <text class="day align-mid">{{nextDate}}</text>
+                </view>
+            </mp-form>
+            <view class="btn-submit-box">
+                <button class="btn-submit" formType="submit">保存</button>
+            </view>
+        </form>
+    </view>
+</view>
