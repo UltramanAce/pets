@@ -1,3 +1,6 @@
 .my-panel-wrap .weui-panel__bd {
   background-color: #fff;
 }
+.my-panel-wrap .line .weui-panel__bd {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

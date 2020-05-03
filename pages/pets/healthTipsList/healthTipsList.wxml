@@ -1,0 +1,15 @@
+<!-- 健康提醒列表页 -->
+<view class="container health-tips-list">
+    <view class="calendar-box">
+        
+    </view>
+    <mp-cells class="list">
+        <block wx:for="{{list}}" wx:key="*this">
+            <mp-cell link hover url="{{item.url}}">
+                <image slot="icon" src="{{item.img}}" class="icon"></image>
+                <view class="title">{{item.title}}</view>
+                <view class="desc mt10 ellipsis2">{{item.desc}}</view>
+            </mp-cell>
+        </block>
+    </mp-cells>
+</view>

@@ -1,7 +1,7 @@
 <view class="my-panel-wrap">
     <view class="page__bd">
         <!-- type1：图文 -->
-        <view class="weui-panel weui-panel_access bg1" wx:if="{{type === 1}}">
+        <view class="weui-panel weui-panel_access bg1 {{hasLine ? 'line' : ''}}" wx:if="{{type === 1}}">
             <view class="weui-panel__bd my-panel" wx:for="{{panels}}" wx:key="*this" >
                 <navigator url="{{item.url}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
@@ -15,7 +15,7 @@
             </view>
         </view>
         <!-- type2：文字 -->
-        <view class="weui-panel weui-panel_access bg1" wx:if="{{type === 2}}">
+        <view class="weui-panel weui-panel_access bg1 {{hasLine ? 'line' : ''}}" wx:if="{{type === 2}}">
             <view class="weui-panel__bd my-panel" wx:for="{{panels}}" wx:key="*this">
                 <view class="weui-media-box weui-media-box_text">
                     <view class="weui-media-box__title weui-media-box__title_in-text">{{item.title}}</view>
@@ -24,7 +24,7 @@
             </view>
         </view>
         <!-- type3：小图文 -->
-        <view class="weui-panel bg1" wx:if="{{type === 3}}">
+        <view class="weui-panel bg1 {{hasLine ? 'line' : ''}}" wx:if="{{type === 3}}">
             <view class="weui-panel__bd my-panel" wx:for="{{panels}}" wx:key="*this">
                 <view class="weui-media-box weui-media-box_small-appmsg">
                     <view class="weui-cells weui-cells_in-small-appmsg">

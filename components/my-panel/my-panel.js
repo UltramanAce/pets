@@ -19,6 +19,10 @@ Component({
         //   img: '', // 图片路径
         // }
       ]
+    },
+    hasLine: {  // 是否有border-bottom
+      type: Boolean,
+      value: false
     }
   },
   data: {

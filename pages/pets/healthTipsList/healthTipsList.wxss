@@ -1,0 +1,14 @@
+.health-tips-list .list .icon {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 32rpx;
+  vertical-align: middle;
+}
+.health-tips-list .list .title {
+  font-size: 16px;
+  color: #333;
+}
+.health-tips-list .list .desc {
+  font-size: 12px;
+  color: #999;
+}
