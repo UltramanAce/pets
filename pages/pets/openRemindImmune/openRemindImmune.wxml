@@ -1,0 +1,56 @@
+<!-- 开启提醒（驱虫） -->
+<view class="container open-remind-immune">
+    <mp-cells title="以往免疫信息">
+        <mp-cell class="merge">
+            <view class="cell">
+                <text class="l">免疫时间</text>
+                <text class="r">{{immuneDate}}</text>
+            </view>
+            <view class="cell">
+                <text class="l">免疫品牌</text>
+                <text class="r">{{immuneBrand}}</text>
+            </view>
+        </mp-cell>
+        <mp-cell class="brand" title="选择免疫品牌" ext-class="">
+            <picker name="plan" value="{{brandIndex}}" range="{{brandList}}" bindchange="bindBrandChange">
+                <view class="weui-input">{{brandList[brandIndex]}}</view>
+            </picker>
+        </mp-cell>
+    </mp-cells>
+    <view class="my-form">
+        <form bindsubmit="submitForm">
+            <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+                <mp-cells title="免疫阶段">
+                    <checkbox-group name="flow" class="flow-checkbox-group" bindchange="checkboxChange">
+                        <mp-cell wx:for="{{checkboxItems}}" wx:key="value">
+                            <label class="label-cell">
+                                <checkbox hidden value="{{item.value}}" checked="{{item.checked}}"></checkbox>
+                                <view class="icon-box">
+                                    <view class="icon {{item.checked ? 'active' : ''}}">{{index+1}}</view>
+                                </view>
+                                <view class="text">
+                                    <view class="line1">第{{index+1}}针疫苗</view>
+                                    <view class="line2">{{item.name}}</view>
+                                </view>
+                            </label>
+                        </mp-cell>
+                    </checkbox-group>
+                </mp-cells>
+                <mp-cells>
+                    <mp-cell title="提醒计划">
+                        <picker name="plan" value="{{planIndex}}" range="{{planList}}">
+                            <view class="weui-input">{{planList[planIndex]}}</view>
+                        </picker>
+                    </mp-cell>
+                </mp-cells>
+                <view class="sub">
+                    <text class="align-mid">建议下次的免疫时间为：</text>
+                    <text class="day align-mid">{{nextDate}}</text>
+                </view>
+            </mp-form>
+            <view class="btn-submit-box">
+                <button class="btn-submit" formType="submit">保存</button>
+            </view>
+        </form>
+    </view>
+</view>

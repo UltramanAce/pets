@@ -1,0 +1,78 @@
+.open-remind-immune {
+  padding-bottom: 110rpx;
+}
+.open-remind-immune .title {
+  padding: 20rpx 32rpx;
+  font-size: 14px;
+  color: #666;
+}
+.open-remind-immune .merge .weui-cells {
+  margin-top: 0;
+}
+.open-remind-immune .merge .weui-cell {
+  padding: 20rpx 32rpx;
+}
+.open-remind-immune .merge .cell {
+  line-height: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.open-remind-immune .merge .cell .l {
+  font-size: 12px;
+  color: #666;
+}
+.open-remind-immune .merge .cell .r {
+  font-size: 12px;
+  color: #999;
+}
+.open-remind-immune .brand .weui-cell {
+  font-size: 14px;
+}
+.open-remind-immune .brand .weui-input {
+  text-align: right;
+}
+.open-remind-immune .brand .weui-cell__hd {
+  color: #666;
+}
+.open-remind-immune .brand .weui-input {
+  color: #999;
+}
+.open-remind-immune .flow-checkbox-group .weui-cell {
+  padding: 20rpx 32rpx;
+}
+.open-remind-immune .flow-checkbox-group .label-cell {
+  display: flex;
+}
+.open-remind-immune .flow-checkbox-group .icon-box {
+  padding: 20rpx 0 0 0;
+}
+.open-remind-immune .flow-checkbox-group .icon-box .icon {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-right: 32rpx;
+  vertical-align: middle;
+  background: #D5D5D5;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.open-remind-immune .flow-checkbox-group .icon-box .active {
+  background-color: #FF8F05;
+}
+.open-remind-immune .flow-checkbox-group .text .line1 {
+  font-size: 14px;
+  color: #666;
+}
+.open-remind-immune .flow-checkbox-group .text .line2 {
+  font-size: 12px;
+  color: #999;
+}
+.open-remind-immune .sub {
+  padding: 20rpx 32rpx;
+  font-size: 12px;
+  color: #999;
+}
+.open-remind-immune .sub .day {
+  color: #FF8F05;
+}
