@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pets/release/release",
     "pages/pets/healthTipsList/healthTipsList",
     "pages/pets/openRemindImmune/openRemindImmune",
     "pages/pets/openRemindInsecticidal/openRemindInsecticidal",

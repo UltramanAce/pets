@@ -1,0 +1,12 @@
+<!-- 添加照片（一般用于朋友圈九宫格） -->
+<view class="my-add-photos">
+    <view class="photo-box">
+        <view class="img-box" wx:for="{{photos}}" wx:key="*this">
+            <image class="img" src="{{photos[index]}}" wx:if="{{photos.length > 0}}"></image>
+            <view class="close-box" data-index="{{index}}" bindtap="closeImage">x</view>
+        </view>
+        <view class="add-photo" bindtap="chooseImage" wx:if="{{photos.length !== maxlength}}">
+            <mp-icon icon="add" color="#888" size="{{40}}"></mp-icon>
+        </view>
+    </view>
+</view>

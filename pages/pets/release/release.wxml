@@ -1,0 +1,30 @@
+<!-- 发布 -->
+<view class="container release">
+    <view class="my-form">
+        <form bindsubmit="submitForm">
+            <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+                <view class="content">
+                    <view class="text-box">
+                        <view class="release-type">#随手记#</view>
+                        <textarea name="text" class="text" maxlength="-1" auto-height="{{auto_height}}" bindblur='areablur' bindfocus='areafocus'/>
+                    </view>
+                    <my-add-photos photos="{{photos}}" bind:closeImage="closeImage" bind:addImage="addImage"></my-add-photos>
+                </view>
+                <mp-cells>
+                    <!-- 定位与选位功能 start -->
+                    
+                    <!-- 定位与选位功能 end -->
+                    <mp-cell title="选择标签" ext-class="">
+                        <picker name="species" value="{{lableIndex}}" range="{{lableList}}" bindchange="lableChange">
+                            <view class="weui-input">{{lableList[lableIndex]}}</view>
+                        </picker>
+                    </mp-cell>
+                </mp-cells>
+            </mp-form>
+            <view class="btn-submit-box">
+                <button class="btn-submit" formType="submit">发布</button>
+            </view>
+        </form>
+        <mp-toptips msg="{{errorMsg}}" type="error" show="{{error}}"></mp-toptips>
+    </view>
+</view>

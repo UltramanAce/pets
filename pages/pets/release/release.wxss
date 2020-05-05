@@ -1,0 +1,12 @@
+.release .content {
+  padding: 32rpx;
+  background-color: #fff;
+}
+.release .content .release-type {
+  font-size: 14px;
+  color: #FF8F05;
+}
+.release .content .text-box .text {
+  width: 100%;
+  min-height: 300rpx;
+}
