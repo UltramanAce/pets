@@ -1,0 +1,55 @@
+<!-- 圈子详情 -->
+<view class="container moments-details pb120">
+    <view class="content">
+        <mp-cell class="list-cell">
+            <image slot="icon" class="img" src="{{momentsData.img}}"></image>
+            <view class="info">
+                <view class="name">{{momentsData.name}}</view>
+                <view class="time">{{momentsData.time}}</view>
+            </view>
+        </mp-cell>
+        <view class="box">
+            <view class="question">
+                {{momentsData.question}}
+            </view>
+            <view class="answer">
+                {{momentsData.answer}}
+            </view>
+            <view class="pic-box">
+                <block wx:for="{{momentsData.imgList}}" wx:key="*this">
+                    <image src="{{item}}" class="img"></image>
+                </block>
+            </view>
+            <view class="btn-group">
+                <button class="mini-btn" type="primary" size="mini">关注</button>
+                <view class="comment-num">
+                    <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                    <text class="ml10 align-mid">{{momentsData.commentNum}}</text>
+                </view>
+                <view class="heart">
+                    <mp-icon icon="note" color="#FF8F05" size="{{16}}"></mp-icon>
+                    <text class="ml10 align-mid">{{momentsData.heart}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="comment-list">
+        <mp-cells title="评论列表">
+            <block wx:for="{{list}}" wx:key="*this">
+                <mp-cell class="list-cell">
+                    <view class="top">
+                        <image slot="icon" class="img" src="{{item.img}}"></image>
+                        <view class="info">
+                            <view class="name">{{item.name}}</view>
+                        </view>
+                    </view>
+                    <view class="desc">
+                        {{item.desc}}
+                    </view>
+                </mp-cell>
+            </block>
+        </mp-cells>
+    </view>
+
+</view>

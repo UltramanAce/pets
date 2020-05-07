@@ -1,0 +1,71 @@
+.moments-details .list-cell .img {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.moments-details .list-cell .name {
+  font-size: 14px;
+  color: #666;
+}
+.moments-details .list-cell .time {
+  font-size: 12px;
+  color: #999;
+}
+.moments-details .content {
+  background-color: #fff;
+}
+.moments-details .content .list-cell .img {
+  width: 120rpx;
+  height: 120rpx;
+}
+.moments-details .content .box {
+  padding: 0 32rpx;
+}
+.moments-details .content .box .question {
+  font-size: 14px;
+  color: #666;
+}
+.moments-details .content .box .answer {
+  margin: 20rpx 0;
+  font-size: 12px;
+  color: #999;
+}
+.moments-details .content .box .pic-box {
+  display: flex;
+}
+.moments-details .content .box .pic-box .img {
+  margin: 0 0.1%;
+  width: 32%;
+  height: 140rpx;
+}
+.moments-details .content .box .btn-group {
+  padding: 20rpx 0;
+  text-align: right;
+}
+.moments-details .content .box .btn-group .mini-btn {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.moments-details .content .box .btn-group .comment-num {
+  display: inline-block;
+  margin: 0 10rpx 0 30rpx;
+  vertical-align: middle;
+}
+.moments-details .content .box .btn-group .heart {
+  display: inline-block;
+  vertical-align: middle;
+}
+.moments-details .comment-list .list-cell .top {
+  display: flex;
+}
+.moments-details .comment-list .list-cell .info {
+  line-height: 80rpx;
+}
+.moments-details .comment-list .list-cell .desc {
+  margin-top: 20rpx;
+  font-size: 14px;
+  color: #999;
+}
