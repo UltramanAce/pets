@@ -4,45 +4,50 @@ const app = getApp()
 
 Page({
   data: {
-    topSwiperData: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    userInfo: {
+      img: '/images/cat.jpg',
+      name: '小瓶子',
+      day: 1000,
+    },
+    topSwiperData: ['1', '2', '3'],
     grids: [
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '挂号',
         icon: 'add',
         iconC: '#DB2C2C',
         iconS: 30,
       },
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '疫苗',
         icon: 'add',
         iconC: '#DB2C2C',
         iconS: 30,
       },
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '驱虫',
         icon: 'add',
         iconC: '#DB2C2C',
         iconS: 30,
       },
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '绝育',
         icon: 'add',
         iconC: '#DB2C2C',
         iconS: 30,
       },
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '体检',
         icon: 'add',
         iconC: '#DB2C2C',
         iconS: 30,
       },
       {
-        url: '/pages/pets/logs/logs',
+        url: '/pages/pets/classifyList/classifyList',
         title: '寄养',
         icon: 'add',
         iconC: '#DB2C2C',
@@ -51,13 +56,13 @@ Page({
     ],
     panels: [
        {
-          url: '../logs/logs', // 导航地址
+          url: '/pages/pets/readDetails/readDetails', // 导航地址
           title: '标题一', // 标题
           desc: '主详情', // 主详情
           img: '/images/cat.jpg', // 图片路径
       },
       {
-        url: '../logs/logs',
+        url: '/pages/pets/readDetails/readDetails',
         title: '标题一',
         desc: '主详情',
         img: '/images/cat.jpg',
@@ -66,27 +71,37 @@ Page({
     images1: [
        {
         img: '/images/cat.jpg', // 图片路径
-        url: '../logs/logs', // 导航地址
+        url: '/pages/pets/drillDetails/drillDetails', // 导航地址
         title: '适应环境' // 标题
       },
        {
         img: '/images/cat.jpg',
-        url: '../logs/logs',
+        url: '/pages/pets/drillDetails/drillDetails',
         title: '适应环境'
       },
     ],
     images2: [
        {
         img: '/images/cat.jpg', // 图片路径
-        url: '../logs/logs', // 导航地址
+        url: '/pages/pets/drillDetails/drillDetails', // 导航地址
         title: '专题描述1' // 标题
       },
        {
         img: '/images/cat.jpg',
-        url: '../logs/logs',
+        url: '/pages/pets/drillDetails/drillDetails',
         title: '专题描述2'
       },
     ]
+  },
+  gotoPetDetailsList: function () { 
+    wx.navigateTo({
+      url: '/pages/pets/petDetailsList/petDetailsList'
+    })
+  },
+  gotoHealthTipsList: function () { 
+    wx.navigateTo({
+      url: '/pages/pets/healthTipsList/healthTipsList'
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -122,12 +137,4 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
 })

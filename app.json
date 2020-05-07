@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/pets/index/index",
     "pages/pets/momentsDetails/momentsDetails",
     "pages/pets/release/release",
     "pages/pets/healthTipsList/healthTipsList",
@@ -10,7 +11,6 @@
     "pages/pets/myPet/myPet",
     "pages/pets/addPet/addPet",
     "pages/pets/classifyList/classifyList",
-    "pages/pets/index/index",
     "pages/pets/healthTips/healthTips",
     "pages/pets/drillDetails/drillDetails",
     "pages/pets/drillList/drillList",

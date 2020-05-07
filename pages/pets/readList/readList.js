@@ -15,13 +15,13 @@ Page({
     ],
     panels1: [
        {
-          url: '../logs/logs', // 导航地址
+          url: '/pages/pets/readDetails/readDetails', // 导航地址
           title: '标题一', // 标题
           desc: '主详情', // 主详情
           img: '/images/cat.jpg', // 图片路径
       },
       {
-        url: '../logs/logs',
+        url: '/pages/pets/readDetails/readDetails',
         title: '标题一',
         desc: '主详情',
         img: '/images/cat.jpg',
@@ -29,19 +29,19 @@ Page({
     ],
     panels2: [
        {
-          url: '../logs/logs', // 导航地址
+          url: '/pages/pets/readDetails/readDetails', // 导航地址
           title: '标题一', // 标题
           desc: '主详情', // 主详情
           img: '/images/cat.jpg', // 图片路径
       },
       {
-        url: '../logs/logs',
+        url: '/pages/pets/readDetails/readDetails',
         title: '标题一',
         desc: '主详情',
         img: '/images/cat.jpg',
       },
       {
-        url: '../logs/logs',
+        url: '/pages/pets/readDetails/readDetails',
         title: '标题一',
         desc: '主详情',
         img: '/images/cat.jpg',

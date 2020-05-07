@@ -4,7 +4,10 @@
     "my-cell": "/components/my-cell/my-cell",
     "my-grid": "/components/my-grid/my-grid",
     "my-panel": "/components/my-panel/my-panel",
-    "my-image": "/components/my-image/my-image"
+    "my-image": "/components/my-image/my-image",
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell"
   },
   "navigationBarTitleText": "养宠"
 }

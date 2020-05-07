@@ -1,35 +1,59 @@
 <!-- 养宠主页 -->
-<view class="container pb130">
+<view class="container pets pb130">
   <!-- 我的宠物 -->
   <view class="top-banner mt10">
-    <my-cell title="我的宠物" footer="+ 添加宠物" link url="/pages/pets/logs/logs" class="my-pets"></my-cell>
-    <view class="swiper-box">
-      <swiper indicator-dots indicator-color="#BFBFBF" indicator-active-color="#FF8F05" autoplay circular>
-        <block wx:for="{{topSwiperData}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item">{{item}}</view>
-          </swiper-item>
-        </block>
-      </swiper>
+    <my-cell title="我的宠物" footer="+ 添加宠物" link url="/pages/pets/addPet/addPet" class="my-pets"></my-cell>
+    <view class="card-box">
+      <view class="card">
+        <mp-cell class="info-cell">
+            <image slot="icon" class="img" src="{{userInfo.img}}"></image>
+            <view class="info">
+                <view class="name">{{userInfo.name}}</view>
+                <view class="time">
+                  <mp-icon icon="note" color="#FF8F05" size="{{20}}"></mp-icon>
+                  <text class="ml10 align-mid">相伴{{userInfo.day}}天</text>
+                </view>
+            </view>
+        </mp-cell>
+        <view class="note-remind">
+          <view class="note" bindtap="gotoPetDetailsList">
+            <mp-icon icon="note" color="#CCC" size="{{20}}"></mp-icon>
+            <text class="ml10 align-mid">随手记</text>
+          </view>
+          <view class="remind" bindtap="gotoHealthTipsList">
+            <mp-icon icon="note" color="#FF8F05" size="{{20}}"></mp-icon>
+            <text class="ml10 align-mid">健康提醒</text>
+          </view>
+        </view>
+        <view class="swiper-box">
+          <swiper indicator-dots indicator-color="#BFBFBF" indicator-active-color="#FF8F05" autoplay circular>
+            <block wx:for="{{topSwiperData}}" wx:key="*this">
+              <swiper-item>
+                <view class="swiper-item">{{item}}</view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
     </view>
   </view>
-  <!-- 入口集合 -->
+  <!-- 分类集合 -->
   <view class="mt10">
     <my-grid grids="{{grids}}"></my-grid>
   </view>
   <!-- 养宠必读 -->
   <view class="mt10">
-    <my-cell title="养宠必读" link url="/pages/pets/logs/logs"></my-cell>
+    <my-cell title="养宠必读" link url="/pages/pets/readList/readList"></my-cell>
     <my-panel panels="{{panels}}"></my-panel>
   </view>
   <!-- 训练专场 -->
   <view class="mt10">
-    <my-cell title="训练专场" link url="/pages/pets/logs/logs"></my-cell>
+    <my-cell title="训练专场" link url="/pages/pets/drillList/drillList"></my-cell>
     <my-image images="{{images1}}" num="{{2}}"></my-image>
   </view>
-  <!-- 训练专场 -->
+  <!-- 知识专题 -->
   <view class="knowledge">
-    <my-cell title="知识专题" link url="/pages/pets/logs/logs"></my-cell>
+    <my-cell title="知识专题" link url="/pages/pets/drillList/drillList"></my-cell>
     <my-image images="{{images2}}"></my-image>
   </view>
   <custom-tab-bar></custom-tab-bar>

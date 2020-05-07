@@ -43,6 +43,10 @@ Component({
                     obj.img = this.data.img[0];
                     console.log('--------')
                     console.log(obj)
+
+                    wx.navigateTo({
+                        url: '/pages/pets/myPet/myPet'
+                    })
                 }
             })
         },

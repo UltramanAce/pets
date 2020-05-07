@@ -1,9 +1,42 @@
-.container {
+.pets {
   .top-banner {
     width: 100%;
     line-height: 40rpx;
     background-color: rgba(255, 143, 5, 0.8);
     border: 1px solid rgba(255, 255, 255, 0);
+    
+  }
+  .info-cell {
+    display: flex;
+    .weui-cell {
+      padding: 0;
+    }
+    .img {
+      width: 120rpx;
+      height: 120rpx;
+      margin-right: 20rpx;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    .name {
+      font-size: 16px;
+      color: #666;
+    }
+    .time {
+      font-size: 14px;
+      color: #999;
+    }
+  }
+  .note-remind {
+    display: flex;   
+    justify-content: space-between;
+    margin: 20rpx 0;
+    .note {
+      display: flex;  
+    }
+    .remind {
+      display: flex;  
+    }
   }
   .my-pets {
     .weui-cell__ft_in-access{
@@ -21,12 +54,20 @@
     
     }
   }
-  .swiper-box {
-    padding: 0 30rpx 30rpx 30rpx;
-    swiper {
-      background: #FFFDFA;
+
+  .card-box {
+    padding: 0 32rpx 32rpx 32rpx;
+    .card {
+      padding: 32rpx;
       border-radius: 24rpx;
+      background: #fff;
+      .swiper-box {
+        border-radius: 24rpx;
+        swiper {
+          background: #bbb;
+          border-radius: 24rpx;
+        }
+      }
     }
-    
   }
 }

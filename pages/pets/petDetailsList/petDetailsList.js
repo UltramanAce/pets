@@ -9,12 +9,12 @@ Component({
         },
         list: [
             {
-                url: '../logs/logs',
+                url: '/pages/pets/momentsDetails/momentsDetails',
                 desc: '描述描述描述描述描描述描述描述描述描描述描述述描述描述描述描述描述',
                 releaseTime: '2020-01-02'
             },
             {
-                url: '../logs/logs',
+                url: '/pages/pets/momentsDetails/momentsDetails',
                 desc: '描述描述描述描述描描述描述描述描述描描述描述述描述描述描述描述描述',
                 releaseTime: '2020-01-02'
             }

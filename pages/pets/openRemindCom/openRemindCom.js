@@ -12,6 +12,9 @@ Component({
     methods: {
         submitForm (e) {
             console.log(e.detail.value)
+            wx.navigateTo({
+                url: '/pages/pets/index/index'
+            })
         },
         bindDateChange (e) { 
             this.setData({
