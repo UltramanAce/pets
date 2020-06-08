@@ -59,8 +59,12 @@
 }
 .pets .card-box .card .swiper-box {
   border-radius: 24rpx;
+  overflow: hidden;
 }
 .pets .card-box .card .swiper-box swiper {
   background: #bbb;
-  border-radius: 24rpx;
+}
+.pets .card-box .card .swiper-box swiper .img {
+  width: 100%;
+  height: 100%;
 }

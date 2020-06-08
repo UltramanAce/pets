@@ -6,10 +6,23 @@ Page({
   data: {
     userInfo: {
       img: '/images/cat.jpg',
-      name: '小瓶子',
+      userName: '小瓶子',
       day: 1000,
     },
-    topSwiperData: ['1', '2', '3'],
+    topSwiperData: [
+      {
+        img: '/images/cat.jpg',
+        url: '/pages/pets/classifyList/classifyList'
+      },
+      {
+        img: '/images/cat.jpg',
+        url: '/pages/pets/classifyList/classifyList'
+      },
+      {
+        img: '/images/cat.jpg',
+        url: '/pages/pets/classifyList/classifyList'
+      }
+    ],
     grids: [
       {
         url: '/pages/pets/classifyList/classifyList',
@@ -109,7 +122,13 @@ Page({
       url: '../logs/logs'
     })
   },
+  // 获取页面数据
+  getPageData () { 
+    // 使用 Mock
+
+  },
   onLoad: function () {
+    this.getPageData();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

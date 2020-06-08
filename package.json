@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "miniprogram-computed": "^2.1.1",
+    "mockjs": "^1.1.0",
     "weui-miniprogram": "^1.0.3"
   },
   "devDependencies": {},
