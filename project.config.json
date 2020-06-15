@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -24,8 +24,8 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
-	"appid": "wx1200a052d85135da",
+	"libVersion": "2.11.2",
+	"appid": "wx65c832149ef5d9b9",
 	"projectname": "pets",
 	"debugOptions": {
 		"hidedInDevtools": []
