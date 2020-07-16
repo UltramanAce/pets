@@ -2,14 +2,11 @@
 <view class="container pets pb130">
   <!-- 我的宠物 -->
   <view class="top-banner mb10">
-  <!-- 需要使用 button 来授权登录 -->
-   <!-- <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
-   <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">手机号领取</button>
     <my-cell title="我的宠物" footer="+ 添加宠物" link url="/pages/pets/addPet/addPet" class="my-pets"></my-cell>
     <view class="card-box">
       <view class="card">
         <mp-cell class="info-cell">
-            <image slot="icon" class="img" src="{{userInfo.img}}"></image>
+            <image slot="icon" class="img" src="{{userInfo.avatarUrl}}"></image>
             <view class="info">
                 <view class="name">{{userInfo.userName}}</view>
                 <view class="time">
